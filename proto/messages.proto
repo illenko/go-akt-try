@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package taxi;
+
+message RideRequest {
+  string order_id = 1;
+  string rider_id = 2;
+  string destination = 3;
+}
+
+message RideAccepted {
+  string order_id = 1;
+  string driver_id = 2;
+}
